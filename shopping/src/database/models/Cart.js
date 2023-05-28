@@ -2,12 +2,8 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const OrderSchema = new Schema({
-    orderId: String,
+const CartSchema = new Schema({
     customerId: String,
-    amount: Number,
-    status: String,
-    txnId: String,
     items: [
         {   
             product: {
